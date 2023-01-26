@@ -23,8 +23,8 @@ services:
     environment:
       - REDIS_HOST=$REDIS_HOST
       - REDIS_PORT=$REDIS_PORT
-  router:
-    image: "jerazmus/lab:fib-nginx"
+  nginx:
+    image: "jerazmus/lab:fib-router"
     mem_limit: 128m
     hostname: nginx
     ports:
