@@ -13,16 +13,16 @@ jobs:
         include:
           - dockerfile: ./Dockerfile
             context: client
-            image: je/lab:fib-client
+            image: jerazmus/lab:fib-client
           - dockerfile: ./Dockerfile
             context: server
-            image: je/lab:fib-server
+            image: jerazmus/lab:fib-server
           - dockerfile: ./Dockerfile
             context: worker
-            image: je/lab:fib-worker
+            image: jerazmus/lab:fib-worker
           - dockerfile: ./Dockerfile
             context: nginx
-            image: je/lab:fib-router  
+            image: jerazmus/lab:fib-router  
     
     steps:
 
